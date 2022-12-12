@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.promo {
+    height: 800px;
+    background-image: url('../img/main_bg.png');
+    /*Разобрать то что выше*/
+    padding: 39px 0 62px 0;
+}
+
+.container {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+    /*Разобрать то что выше*/
+}
+
+.logo .logo_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.logo .logo_text {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 14px;
+}
+
+h1 {
+    margin-top: 53px;
+}
+
+.title {
+    color: #F9BF3B;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 41px;
+    line-height: 41px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2.title { 
+    /*Разобрать почему в классе нету пробела*/
+    margin-top: 30px;
+}
+
+.simle .title_big {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 21px;
+}
+
+.promo .promo_text {
+    padding: 0 13px;
+    margin-top: 23px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.promo .promo_text .orange_text {
+    color:  #F9BF3B;
+    font-weight: 700;
+    text-transform: uppercase;
+    /*Разобрать то что выше*/
+}
+
+.promo .button_text {
+    display: block;
+    /* margin-top: 73px; будет недействителей изза того что строчка ниже бужет перебивать его свойства */
+    margin: 73px auto; /*меняем конструкцию с 0 на 73 из-за правил выше и ниже*/
+    /*тут пожно поставить margin-top: 73px; но на макете внешние отступы есть снизу и сверху, будет проще сделать так как я сделал выше*/
+    width: 313px;
+    height: 72px;
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.18);
+    border: 4px solid rgba(0, 0, 0, 0.23);
+    background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+    /*Разобрать то что выше*/
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+
+.more {
+    margin-top: 73px;
+
+}
+
+.more .more_text {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.more .more_img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+.waiting {
+    background-color: #efefef;
+    min-height: 604px;
+    padding: 85px 0 75px 0;
+
+}
+
+.waiting .waiting_header, .finish .finish_header {
+    color: #252525;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.finish .finish_header {
+    color: #fff;
+}
+
+.waiting .waiting_divider, .finish .finish_divider {
+    background: #F9BF3B;
+    width: 217px;
+    height: 4px;
+    display: block;
+    margin: 17px auto;
+}
+
+.waiting .waiting_subheader {
+    margin-top: 17px;
+    color: #4A4A4A;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.waiting .waiting_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.waiting .waiting_wrapper .waiting_item {
+    width: 339px;
+    text-align: center;
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_img {
+    width: 100%;
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_descr {
+    margin-top: 33px;
+    color: #4a4a4a;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.optimization {
+    min-height: 550px;
+    padding: 102px 0 107px 0;
+}
+
+.optimization .optimization_header {
+    margin-left: 391px;
+    color: #299cbd;
+    font-weight: 400;
+    font-size: 29px;
+    text-transform: uppercase;
+}
+
+.optimization .optimization_text {
+    margin-top: 25px;
+    margin-left: 391px;
+    color: #4a4a4a;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 27px;
+
+}
+
+.optimization .optimization_text span {
+    font-weight: 700;
+}
+
+.optimization .optimization_img {
+    position: absolute;
+    top: -54px;
+    left: -240px;
+    z-index: -1;
+}
+
+.finish {
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background-image: url('../img/second_bg.jpg');
+    background-size: cover;
+}
+
+.finish .finish_wrapper {
+    margin-top: 41px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.finish .finish_wrapper .finish_item {
+    width: 204px;
+}
+
+.finish .finish_wrapper .finish_item .finish_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /*разобрать то что выше*/
+    width: 115px;
+    height: 115px;
+    background-color: #b4e2ff;
+    border-radius: 100%;
+}
+
+.finish .finish_wrapper .finish_item .finish_descr {
+    margin-top: 25px;
+    text-align: center;
+    color: #efefef;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.gift {
+    min-height: 631px;
+    padding: 88px 0 88px 0;
+    background: #efefef;
+}
+
+.gift .gift_box .gift_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.gift .gift_text {
+    margin-top: 45px;
+    min-height: 113px;
+    margin-left: 380px;
+    margin-right: 380px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    align-items: center;
+    text-align: center;
+}
+
+.gift .gift_button_text {
+    display: block;
+    /* margin-top: 73px; будет недействителей изза того что строчка ниже бужет перебивать его свойства */
+    margin: 73px auto; /*меняем конструкцию с 0 на 73 из-за правил выше и ниже*/
+    /*тут пожно поставить margin-top: 73px; но на макете внешние отступы есть снизу и сверху, будет проще сделать так как я сделал выше*/
+    width: 313px;
+    height: 72px;
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.18);
+    border: 4px solid rgba(0, 0, 0, 0.23);
+    background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+    /*Разобрать то что выше*/
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+
+.first {
+    height: 450px;
+    background: #ffffff;
+}
+
+.first .first_img {
+    min-width: 201px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 89px;
+}
+
+.first .first_text {
+    min-height: 30px;
+    margin-top: 44px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.first .first_text_blue {
+    min-height: 31px;
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    color: #299CBD;
+    text-align: center;
+    font-weight: bold;
+}
+
+.first .first_text2 {
+    min-height: 20px;
+    margin-top: 37.5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.connection {
+    height: 160px;
+    background: #1A1A1A;
+    padding: 60px;
+}
+
+.connection .connection_text {
+    min-height: 43px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #888888;
+}
+
+a {
+    text-decoration:none;
+    color: #888888;
+    text-decoration-color: none;
+  }
